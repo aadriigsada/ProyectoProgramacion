@@ -79,6 +79,7 @@
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Name = "RegistroForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
