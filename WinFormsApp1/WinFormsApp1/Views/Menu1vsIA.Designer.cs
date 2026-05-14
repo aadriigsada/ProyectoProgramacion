@@ -47,6 +47,7 @@
             timerIA = new System.Windows.Forms.Timer(components);
             btnSortear = new Button();
             pBox1 = new PictureBox();
+            pictureBox11 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
@@ -58,6 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             SuspendLayout();
             // 
             // pictureBox9
@@ -247,6 +249,18 @@
             pBox1.TabIndex = 37;
             pBox1.TabStop = false;
             // 
+            // pictureBox11
+            // 
+            pictureBox11.BackColor = Color.Transparent;
+            pictureBox11.BackgroundImage = Properties.Resources.BotonPJPerso;
+            pictureBox11.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox11.Location = new Point(112, 360);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(115, 78);
+            pictureBox11.TabIndex = 38;
+            pictureBox11.TabStop = false;
+            pictureBox11.Click += btnGestionar_Click;
+            // 
             // Menu1vsIA
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -254,6 +268,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox11);
             Controls.Add(pBox1);
             Controls.Add(btnSortear);
             Controls.Add(pictureBox10);
@@ -270,6 +285,8 @@
             Controls.Add(labelPS);
             Controls.Add(labelNombre);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Menu1vsIA";
             StartPosition = FormStartPosition.CenterScreen;
@@ -285,6 +302,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -308,5 +326,6 @@
         private System.Windows.Forms.Timer timerIA;
         private Button btnSortear;
         private PictureBox pBox1;
+        private PictureBox pictureBox11;
     }
 }

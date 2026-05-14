@@ -1,9 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Drawing;
-using System.IO;
-using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using WinFormsApp1.Helpers;
 using WinFormsApp1.Models;
 
 namespace WinFormsApp1.Views
@@ -17,22 +15,7 @@ namespace WinFormsApp1.Views
         {
             InitializeComponent();
             _usuario = usuario;
-
-            try
-            {
-                string rutaCursor = Path.Combine(Application.StartupPath, "BoxingGlove.cur");
-                if (File.Exists(rutaCursor))
-                {
-                    IntPtr cursorHandle = LoadCursorFromFile(rutaCursor);
-                    if (cursorHandle != IntPtr.Zero)
-                    {
-                        Cursor = new Cursor(cursorHandle);
-                    }
-                }
-            }
-            catch
-            {
-            }
+            CursorHelper.ApplyCustomCursor(this);
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
@@ -91,9 +74,6 @@ namespace WinFormsApp1.Views
         {
         }
 
-        [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Auto)]
-        private static extern IntPtr LoadCursorFromFile(string path);
-
         private void Combate(object sender, EventArgs e)
         {
             string p1 = labelNombre.Text.Trim();
@@ -125,8 +105,8 @@ namespace WinFormsApp1.Views
 
             Hide();
             using CronicaCombateForm cronica = new CronicaCombateForm(pj1, pj2, ModoCombate.UnoVsUno, _usuario);
-            cronica.ShowDialog();
-            Show();
+            cronica.ShowDialog(this);
+            Close();
         }
 
         private Personaje? ObtenerPersonajePorNombre(string nombre)
@@ -198,6 +178,36 @@ namespace WinFormsApp1.Views
             }
 
             return false;
+        }
+
+        private void escogerJ1_Click(object? sender, EventArgs e) => AbrirGestionPersonajes(true);
+        private void escogerJ2_Click(object? sender, EventArgs e) => AbrirGestionPersonajes(false);
+
+        private void AbrirGestionPersonajes(bool jugadorUno)
+        {
+            using GestionPersonajesForm ventanaGestion = new GestionPersonajesForm();
+            DialogResult resultado = ventanaGestion.ShowDialog(this);
+
+            if (resultado != DialogResult.OK || ventanaGestion.PersonajeSeleccionado is null)
+            {
+                return;
+            }
+
+            if (jugadorUno)
+            {
+                AplicarSeleccionManual(ventanaGestion.PersonajeSeleccionado, labelNombre, labelPS, labelATQ, labelDEF);
+                return;
+            }
+
+            AplicarSeleccionManual(ventanaGestion.PersonajeSeleccionado, labelNombre2, labelPS2, labelATQ2, labelDEF2);
+        }
+
+        private static void AplicarSeleccionManual(Personaje personaje, Label lblNom, Label lblPs, Label lblAtq, Label lblDef)
+        {
+            lblNom.Text = personaje.Nombre;
+            lblPs.Text = personaje.Resistencia.ToString();
+            lblAtq.Text = personaje.Ataque.ToString();
+            lblDef.Text = personaje.Defensa.ToString();
         }
     }
 }

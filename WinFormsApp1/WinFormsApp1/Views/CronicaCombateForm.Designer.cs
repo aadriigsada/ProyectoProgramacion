@@ -29,6 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CronicaCombateForm));
             panelHeader = new Panel();
             lblSubtitulo = new Label();
             lblTitulo = new Label();
@@ -57,13 +58,14 @@
             // 
             lblSubtitulo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblSubtitulo.AutoEllipsis = true;
-            lblSubtitulo.Font = new Font("Consolas", 11F, FontStyle.Regular);
+            lblSubtitulo.Font = new Font("Consolas", 11F);
             lblSubtitulo.ForeColor = Color.FromArgb(232, 221, 185);
             lblSubtitulo.Location = new Point(28, 57);
             lblSubtitulo.Name = "lblSubtitulo";
             lblSubtitulo.Size = new Size(848, 22);
             lblSubtitulo.TabIndex = 1;
             lblSubtitulo.Text = "Peleadores listos para UEFETE";
+            lblSubtitulo.Click += lblSubtitulo_Click;
             // 
             // lblTitulo
             // 
@@ -72,7 +74,7 @@
             lblTitulo.ForeColor = Color.FromArgb(255, 196, 67);
             lblTitulo.Location = new Point(24, 18);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(225, 32);
+            lblTitulo.Size = new Size(224, 32);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "CRONICA PREVIA";
             // 
@@ -93,7 +95,7 @@
             rtbHistoria.BorderStyle = BorderStyle.None;
             rtbHistoria.DetectUrls = false;
             rtbHistoria.Dock = DockStyle.Fill;
-            rtbHistoria.Font = new Font("Georgia", 11.25F, FontStyle.Regular);
+            rtbHistoria.Font = new Font("Georgia", 11.25F);
             rtbHistoria.ForeColor = Color.FromArgb(32, 28, 24);
             rtbHistoria.Location = new Point(24, 22);
             rtbHistoria.Name = "rtbHistoria";
@@ -140,6 +142,9 @@
             Controls.Add(panelContenido);
             Controls.Add(panelFooter);
             Controls.Add(panelHeader);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             MinimumSize = new Size(760, 500);
             Name = "CronicaCombateForm";
             StartPosition = FormStartPosition.CenterScreen;

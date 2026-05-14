@@ -8,6 +8,7 @@ namespace WinFormsApp1.Models
         public int Defensa { get; set; }
         public int Resistencia { get; set; }
         public int Tecnica { get; set; }
+        public string Descripcion { get; set; } = string.Empty;
 
         // Estado en combate
         public int HP { get; set; }

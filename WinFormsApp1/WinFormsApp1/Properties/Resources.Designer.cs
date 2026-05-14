@@ -63,6 +63,26 @@ namespace WinFormsApp1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BotonEscoger {
+            get {
+                object obj = ResourceManager.GetObject("BotonEscoger", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BotonPJPerso {
+            get {
+                object obj = ResourceManager.GetObject("BotonPJPerso", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_pantalla_2026_05_12_122102 {
             get {
                 object obj = ResourceManager.GetObject("Captura de pantalla 2026-05-12 122102", resourceCulture);
@@ -106,6 +126,16 @@ namespace WinFormsApp1.Properties {
         internal static System.Drawing.Bitmap FondoCombate {
             get {
                 object obj = ResourceManager.GetObject("FondoCombate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FondoGestionPersonajes {
+            get {
+                object obj = ResourceManager.GetObject("FondoGestionPersonajes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

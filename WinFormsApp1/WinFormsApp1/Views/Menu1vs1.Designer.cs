@@ -57,6 +57,8 @@
             pictureBox11 = new PictureBox();
             pictureBox10 = new PictureBox();
             pictureBox19 = new PictureBox();
+            escogerJ1 = new PictureBox();
+            escogerJ2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -76,6 +78,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)escogerJ1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)escogerJ2).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -396,6 +400,28 @@
             pictureBox19.TabStop = false;
             pictureBox19.Click += Combate;
             // 
+            // escogerJ1
+            // 
+            escogerJ1.BackgroundImage = Properties.Resources.BotonPJPerso;
+            escogerJ1.BackgroundImageLayout = ImageLayout.Stretch;
+            escogerJ1.Location = new Point(12, 347);
+            escogerJ1.Name = "escogerJ1";
+            escogerJ1.Size = new Size(59, 62);
+            escogerJ1.TabIndex = 31;
+            escogerJ1.TabStop = false;
+            escogerJ1.Click += escogerJ1_Click;
+            // 
+            // escogerJ2
+            // 
+            escogerJ2.BackgroundImage = Properties.Resources.BotonPJPerso;
+            escogerJ2.BackgroundImageLayout = ImageLayout.Stretch;
+            escogerJ2.Location = new Point(729, 347);
+            escogerJ2.Name = "escogerJ2";
+            escogerJ2.Size = new Size(59, 60);
+            escogerJ2.TabIndex = 32;
+            escogerJ2.TabStop = false;
+            escogerJ2.Click += escogerJ2_Click;
+            // 
             // Menu1vs1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -403,6 +429,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(escogerJ2);
+            Controls.Add(escogerJ1);
             Controls.Add(pictureBox19);
             Controls.Add(pictureBox18);
             Controls.Add(pictureBox17);
@@ -431,6 +459,8 @@
             Controls.Add(label4);
             Controls.Add(labelNombre);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Menu1vs1";
             StartPosition = FormStartPosition.CenterScreen;
@@ -455,6 +485,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
+            ((System.ComponentModel.ISupportInitialize)escogerJ1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)escogerJ2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -489,5 +521,7 @@
         private PictureBox pictureBox11;
         private PictureBox pictureBox10;
         private PictureBox pictureBox19;
+        private PictureBox escogerJ1;
+        private PictureBox escogerJ2;
     }
 }

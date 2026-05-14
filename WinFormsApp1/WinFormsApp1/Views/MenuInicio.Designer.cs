@@ -32,7 +32,6 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
-            lblBienvenida = new Label();
             SuspendLayout();
             // 
             // button1
@@ -70,15 +69,6 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // lblBienvenida
-            // 
-            lblBienvenida.AutoSize = true;
-            lblBienvenida.Location = new Point(723, 24);
-            lblBienvenida.Name = "lblBienvenida";
-            lblBienvenida.Size = new Size(38, 15);
-            lblBienvenida.TabIndex = 4;
-            lblBienvenida.Text = "label1";
-            // 
             // MenuInicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -86,22 +76,21 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
-            Controls.Add(lblBienvenida);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "MenuInicio";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "MenuInicio";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
         private Button button1;
         private Button button2;
         private Button button3;
-        private Label lblBienvenida;
     }
 }

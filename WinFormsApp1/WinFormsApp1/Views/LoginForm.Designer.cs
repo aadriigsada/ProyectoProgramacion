@@ -108,7 +108,9 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Cursor = Cursors.Cross;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";

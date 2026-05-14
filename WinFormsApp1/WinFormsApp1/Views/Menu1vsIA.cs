@@ -1,9 +1,8 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Drawing;
-using System.IO;
-using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using WinFormsApp1.Helpers;
 using WinFormsApp1.Models;
 
 namespace WinFormsApp1.Views
@@ -30,22 +29,7 @@ namespace WinFormsApp1.Views
 
             _imagenesRuleta = CargarImagenesRuleta();
             pBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-
-            try
-            {
-                string rutaCursor = Path.Combine(Application.StartupPath, "BoxingGlove.cur");
-                if (File.Exists(rutaCursor))
-                {
-                    IntPtr cursorHandle = LoadCursorFromFile(rutaCursor);
-                    if (cursorHandle != IntPtr.Zero)
-                    {
-                        Cursor = new Cursor(cursorHandle);
-                    }
-                }
-            }
-            catch
-            {
-            }
+            CursorHelper.ApplyCustomCursor(this);
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
@@ -100,9 +84,6 @@ namespace WinFormsApp1.Views
         {
         }
 
-        [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Auto)]
-        private static extern IntPtr LoadCursorFromFile(string path);
-
         private void Combate(object sender, EventArgs e)
         {
             string p1 = labelNombre.Text.Trim();
@@ -133,8 +114,8 @@ namespace WinFormsApp1.Views
 
             Hide();
             using CronicaCombateForm cronica = new CronicaCombateForm(pj1, pjIA, ModoCombate.UnoVsIA, _usuario);
-            cronica.ShowDialog();
-            Show();
+            cronica.ShowDialog(this);
+            Close();
         }
 
         private void btnSortear_Click(object sender, EventArgs e)
@@ -358,6 +339,32 @@ namespace WinFormsApp1.Views
             }
 
             return false;
+        }
+
+        private void btnGestionar_Click(object? sender, EventArgs e)
+        {
+            AbrirGestionPersonajes();
+        }
+
+        private void AbrirGestionPersonajes()
+        {
+            using GestionPersonajesForm ventanaGestion = new GestionPersonajesForm();
+            DialogResult resultado = ventanaGestion.ShowDialog(this);
+
+            if (resultado != DialogResult.OK || ventanaGestion.PersonajeSeleccionado is null)
+            {
+                return;
+            }
+
+            AplicarSeleccionManual(ventanaGestion.PersonajeSeleccionado);
+        }
+
+        private void AplicarSeleccionManual(Personaje personaje)
+        {
+            labelNombre.Text = personaje.Nombre;
+            labelPS.Text = personaje.Resistencia.ToString();
+            labelATQ.Text = personaje.Ataque.ToString();
+            labelDEF.Text = personaje.Defensa.ToString();
         }
     }
 }

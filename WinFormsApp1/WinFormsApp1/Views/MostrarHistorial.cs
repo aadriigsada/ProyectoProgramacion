@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormsApp1.Controllers;
+using WinFormsApp1.Helpers;
 
 namespace WinFormsApp1.Views
 {
@@ -18,6 +19,7 @@ namespace WinFormsApp1.Views
         public MostrarHistorial(string usuario)
         {
             InitializeComponent();
+            CursorHelper.ApplyCustomCursor(this);
             _usuario = usuario;
             Text = $"Historial de {usuario}";
             lblTitulo.Text = $"Historial de combates - {usuario}";

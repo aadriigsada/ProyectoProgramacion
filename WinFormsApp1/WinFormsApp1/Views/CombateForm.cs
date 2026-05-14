@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using WinFormsApp1.Controllers;
+using WinFormsApp1.Helpers;
 using WinFormsApp1.Models;
 
 namespace WinFormsApp1.Views
@@ -46,6 +47,7 @@ namespace WinFormsApp1.Views
         public CombateForm(string p1, string p2, ModoCombate modoCombate, string usuarioActual)
         {
             InitializeComponent();
+            CursorHelper.ApplyCustomCursor(this);
             _nombreJugador = p1;
             _nombreRival = p2;
             _modoCombate = modoCombate;
@@ -58,6 +60,7 @@ namespace WinFormsApp1.Views
             if (p2 is null) throw new ArgumentNullException(nameof(p2));
 
             InitializeComponent();
+            CursorHelper.ApplyCustomCursor(this);
             _nombreJugador = p1.Nombre;
             _nombreRival = p2.Nombre;
             _modoCombate = modoCombate;
@@ -283,8 +286,22 @@ namespace WinFormsApp1.Views
             GuardarResultadoEnHistorial(ganador);
             EscribirEnLog($"Combate finalizado. Ganador: {ganador}.", Color.Gold);
             MessageBox.Show($"Ganador: {ganador}", "Combate terminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Close();
+            VolverAMenuInicio();
             return true;
+        }
+
+        private void VolverAMenuInicio()
+        {
+            if (string.IsNullOrWhiteSpace(_usuarioActual))
+            {
+                Close();
+                return;
+            }
+
+            Hide();
+            using MenuInicio menu = new MenuInicio(_usuarioActual);
+            menu.ShowDialog(this);
+            Close();
         }
 
         private void GuardarResultadoEnHistorial(string ganador)

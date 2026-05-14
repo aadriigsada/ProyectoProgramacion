@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MostrarHistorial));
             panelTop = new Panel();
             btnRefrescar = new Button();
             lblResumen = new Label();
@@ -69,11 +73,11 @@
             // lblResumen
             // 
             lblResumen.AutoSize = true;
-            lblResumen.Font = new Font("Consolas", 9.75F, FontStyle.Regular);
+            lblResumen.Font = new Font("Consolas", 9.75F);
             lblResumen.ForeColor = Color.FromArgb(240, 229, 192);
             lblResumen.Location = new Point(16, 43);
             lblResumen.Name = "lblResumen";
-            lblResumen.Size = new Size(188, 15);
+            lblResumen.Size = new Size(266, 15);
             lblResumen.TabIndex = 1;
             lblResumen.Text = "Total: 0 | Victorias: 0 | Derrotas: 0";
             // 
@@ -84,7 +88,7 @@
             lblTitulo.ForeColor = Color.FromArgb(255, 196, 67);
             lblTitulo.Location = new Point(12, 12);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(185, 21);
+            lblTitulo.Size = new Size(220, 22);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "Historial de combates";
             // 
@@ -92,12 +96,30 @@
             // 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(30, 30, 30);
+            dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView1.BackgroundColor = Color.FromArgb(18, 18, 18);
             dataGridView1.BorderStyle = BorderStyle.Fixed3D;
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(198, 120, 12);
+            dataGridViewCellStyle2.Font = new Font("Consolas", 10F, FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(24, 24, 24);
+            dataGridViewCellStyle3.Font = new Font("Consolas", 9.5F);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(239, 239, 239);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(255, 196, 67);
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.GridColor = Color.FromArgb(70, 70, 70);
             dataGridView1.Location = new Point(0, 72);
             dataGridView1.Name = "dataGridView1";
@@ -106,15 +128,6 @@
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(980, 478);
             dataGridView1.TabIndex = 1;
-            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(198, 120, 12);
-            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
-            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Consolas", 10F, FontStyle.Bold);
-            dataGridView1.DefaultCellStyle.BackColor = Color.FromArgb(24, 24, 24);
-            dataGridView1.DefaultCellStyle.ForeColor = Color.FromArgb(239, 239, 239);
-            dataGridView1.DefaultCellStyle.Font = new Font("Consolas", 9.5F, FontStyle.Regular);
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(255, 196, 67);
-            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
-            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(30, 30, 30);
             // 
             // MostrarHistorial
             // 
@@ -124,9 +137,10 @@
             ClientSize = new Size(980, 550);
             Controls.Add(dataGridView1);
             Controls.Add(panelTop);
-            Font = new Font("Consolas", 9.5F, FontStyle.Regular);
+            Font = new Font("Consolas", 9.5F);
             ForeColor = Color.FromArgb(239, 239, 239);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "MostrarHistorial";
             StartPosition = FormStartPosition.CenterScreen;

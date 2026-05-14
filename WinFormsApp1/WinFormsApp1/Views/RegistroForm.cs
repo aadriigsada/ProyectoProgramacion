@@ -1,9 +1,8 @@
 using System;
 using System.Drawing;
-using System.IO;
-using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using WinFormsApp1.Controllers;
+using WinFormsApp1.Helpers;
 using WinFormsApp1.Models;
 
 namespace WinFormsApp1.Views
@@ -18,20 +17,7 @@ namespace WinFormsApp1.Views
         {
             InitializeComponent();
             textBox2.UseSystemPasswordChar = true;
-
-            try
-            {
-                string rutaCursor = Path.Combine(Application.StartupPath, "BoxingGlove.cur");
-                if (File.Exists(rutaCursor))
-                {
-                    IntPtr cursorHandle = LoadCursorFromFile(rutaCursor);
-                    if (cursorHandle != IntPtr.Zero)
-                    {
-                        this.Cursor = new Cursor(cursorHandle);
-                    }
-                }
-            }
-            catch { /* Error silencioso */ }
+            CursorHelper.ApplyCustomCursor(this);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -67,9 +53,5 @@ namespace WinFormsApp1.Views
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Auto)]
-        private static extern IntPtr LoadCursorFromFile(string path);
-
     }
 }

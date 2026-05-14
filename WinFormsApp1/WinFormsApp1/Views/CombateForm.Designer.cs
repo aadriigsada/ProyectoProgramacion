@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CombateForm));
             VidaPj1 = new WinFormsApp1.Controls.ModernProgressBar();
             VidaPj2 = new WinFormsApp1.Controls.ModernProgressBar();
             pj1 = new PictureBox();
@@ -269,6 +270,9 @@
             Controls.Add(panel1);
             Controls.Add(pj2);
             Controls.Add(pj1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "CombateForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CombateForm";

@@ -38,6 +38,7 @@
             // 
             textBox1.BackColor = Color.Black;
             textBox1.BorderStyle = BorderStyle.None;
+            textBox1.ForeColor = Color.Transparent;
             textBox1.Location = new Point(219, 305);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(529, 16);
@@ -47,6 +48,7 @@
             // 
             textBox2.BackColor = Color.Black;
             textBox2.BorderStyle = BorderStyle.None;
+            textBox2.ForeColor = SystemColors.Window;
             textBox2.Location = new Point(219, 358);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(529, 16);
@@ -78,6 +80,9 @@
             Controls.Add(button1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "RegistroForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";

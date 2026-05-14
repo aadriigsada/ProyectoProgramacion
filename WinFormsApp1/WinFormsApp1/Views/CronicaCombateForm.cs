@@ -6,6 +6,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormsApp1.Helpers;
 using WinFormsApp1.Models;
 
 namespace WinFormsApp1.Views
@@ -30,6 +31,7 @@ namespace WinFormsApp1.Views
         public CronicaCombateForm(Personaje p1, Personaje p2, ModoCombate modoCombate, string usuarioActual)
         {
             InitializeComponent();
+            CursorHelper.ApplyCustomCursor(this);
             _p1 = p1 ?? throw new ArgumentNullException(nameof(p1));
             _p2 = p2 ?? throw new ArgumentNullException(nameof(p2));
             _modoCombate = modoCombate;
@@ -267,6 +269,11 @@ namespace WinFormsApp1.Views
 
             _cierrePermitido = true;
             Close();
+        }
+
+        private void lblSubtitulo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
