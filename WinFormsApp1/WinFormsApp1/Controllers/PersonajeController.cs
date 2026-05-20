@@ -340,6 +340,90 @@ namespace WinFormsApp1.Controllers
             object? valor = cmd.ExecuteScalar();
             return Convert.ToInt32(valor);
         }
+
+        public bool ActualizarPersonaje(Personaje personaje, out string errorMessage)
+        {
+            errorMessage = string.Empty;
+
+            // Validación extra de seguridad (ID > 9)
+            if (personaje.Id <= 9)
+            {
+                errorMessage = "No se pueden modificar personajes predeterminados.";
+                return false;
+            }
+
+            try
+            {
+                using MySqlConnection con = new MySqlConnection(cadenaConexion);
+                con.Open();
+
+                // Resolvemos dinámicamente los nombres de las columnas en tu base de datos
+                string? colId = ResolverColumna(con, "personajes", "id_personaje", "id");
+                string? colNombre = ResolverColumna(con, "personajes", "nombre");
+                string? colAtaque = ResolverColumna(con, "personajes", "ataque", "fuerza");
+                string? colDefensa = ResolverColumna(con, "personajes", "defensa");
+                string? colResistencia = ResolverColumna(con, "personajes", "resistencia");
+                string? colTecnica = ResolverColumna(con, "personajes", "tecnica");
+                string? colDescripcion = ResolverColumna(con, "personajes", "descripcion", "descripcion_personaje");
+
+                if (string.IsNullOrWhiteSpace(colId))
+                {
+                    errorMessage = "No se encontró la columna ID en la tabla de personajes.";
+                    return false;
+                }
+
+                // Construcción dinámica del query de actualización
+                var sets = new List<string>();
+                using MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = con;
+
+                if (!string.IsNullOrWhiteSpace(colNombre))
+                {
+                    sets.Add($"{colNombre} = @nombre");
+                    cmd.Parameters.AddWithValue("@nombre", personaje.Nombre.Trim());
+                }
+                if (!string.IsNullOrWhiteSpace(colAtaque))
+                {
+                    sets.Add($"{colAtaque} = @ataque");
+                    cmd.Parameters.AddWithValue("@ataque", personaje.Ataque);
+                }
+                if (!string.IsNullOrWhiteSpace(colDefensa))
+                {
+                    sets.Add($"{colDefensa} = @defensa");
+                    cmd.Parameters.AddWithValue("@defensa", personaje.Defensa);
+                }
+                if (!string.IsNullOrWhiteSpace(colResistencia))
+                {
+                    sets.Add($"{colResistencia} = @resistencia");
+                    cmd.Parameters.AddWithValue("@resistencia", personaje.Resistencia);
+                }
+                if (!string.IsNullOrWhiteSpace(colTecnica))
+                {
+                    sets.Add($"{colTecnica} = @tecnica");
+                    cmd.Parameters.AddWithValue("@tecnica", personaje.Tecnica);
+                }
+                if (!string.IsNullOrWhiteSpace(colDescripcion))
+                {
+                    sets.Add($"{colDescripcion} = @descripcion");
+                    cmd.Parameters.AddWithValue("@descripcion", personaje.Descripcion ?? string.Empty);
+                }
+
+                if (sets.Count == 0)
+                {
+                    return true;
+                }
+
+                cmd.CommandText = $"UPDATE personajes SET {string.Join(", ", sets)} WHERE {colId} = @id";
+                cmd.Parameters.AddWithValue("@id", personaje.Id);
+
+                return cmd.ExecuteNonQuery() > 0;
+            }
+            catch (Exception ex)
+            {
+                errorMessage = ex.Message;
+                return false;
+            }
+        }
     }
 }
 

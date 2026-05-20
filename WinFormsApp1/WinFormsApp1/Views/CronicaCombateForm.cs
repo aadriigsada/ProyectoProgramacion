@@ -15,7 +15,7 @@ namespace WinFormsApp1.Views
     {
         private const string GroqEndpoint = "https://api.groq.com/openai/v1/chat/completions";
         // Pega aqui tu API key de Groq o usa la variable de entorno GROQ_API_KEY.
-        private const string GroqApiKey = "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";
+        private const string GroqApiKey = "";
 
         private static readonly HttpClient HttpClient = new HttpClient();
 
@@ -53,7 +53,7 @@ namespace WinFormsApp1.Views
             string apiKey = Environment.GetEnvironmentVariable("GROQ_API_KEY") ?? GroqApiKey;
             if (string.IsNullOrWhiteSpace(apiKey) || apiKey.Contains("PEGA_AQUI_TU_API_KEY_GROQ", StringComparison.OrdinalIgnoreCase))
             {
-                rtbHistoria.Text = "[MODO RESPALDO: API KEY NO CONFIGURADA]" + Environment.NewLine + Environment.NewLine + GenerarHistoriaGenerica();
+                rtbHistoria.Text = "" + Environment.NewLine + Environment.NewLine + GenerarHistoriaGenerica();
                 return;
             }
 
@@ -270,10 +270,6 @@ namespace WinFormsApp1.Views
             _cierrePermitido = true;
             Close();
         }
-
-        private void lblSubtitulo_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
+ 

@@ -3,52 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\adrian\\source\\repos\\proyecto\\winformsapp1\\winformsapp1\\views\\menuinicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\views\\menuinicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\adrian\\source\\repos\\proyecto\\winformsapp1\\winformsapp1\\views\\combateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\views\\combateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\adrian\\source\\repos\\proyecto\\winformsapp1\\winformsapp1\\views\\cronicacombateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\views\\cronicacombateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\adrian\\source\\repos\\proyecto\\winformsapp1\\winformsapp1\\views\\gestionpersonajesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\views\\gestionpersonajesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\adrian\\source\\repos\\proyecto\\winformsapp1\\winformsapp1\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\adrian\\source\\repos\\proyecto\\winformsapp1\\winformsapp1\\views\\menu1vs1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\views\\menu1vs1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\adrian\\source\\repos\\proyecto\\winformsapp1\\winformsapp1\\views\\menu1vsia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\views\\menu1vsia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\adrian\\source\\repos\\proyecto\\winformsapp1\\winformsapp1\\views\\menuinicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\views\\menuinicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\adrian\\source\\repos\\proyecto\\winformsapp1\\winformsapp1\\views\\mostrarhistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\views\\mostrarhistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\adrian\\source\\repos\\proyecto\\winformsapp1\\winformsapp1\\views\\registroform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\views\\registroform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\adrian\\source\\repos\\proyecto\\winformsapp1\\winformsapp1\\views\\gestionpersonajesform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\views\\gestionpersonajesform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\winformsapp1\\views\\cronicacombateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\views\\cronicacombateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\adrian\\source\\repos\\proyecto\\winformsapp1\\winformsapp1\\views\\gestionpersonajesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\views\\gestionpersonajesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\adrian\\source\\repos\\proyecto\\winformsapp1\\winformsapp1\\controllers\\personajecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC150CE2-BC7F-BB20-899B-A29BED553BB8}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\controllers\\personajecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,154 +26,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MenuInicio.cs",
-              "DocumentMoniker": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\MenuInicio.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Views\\MenuInicio.cs",
-              "ToolTip": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\MenuInicio.cs",
-              "RelativeToolTip": "WinFormsApp1\\Views\\MenuInicio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T21:47:36.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CombateForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\CombateForm.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Views\\CombateForm.cs",
-              "ToolTip": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\CombateForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WinFormsApp1\\Views\\CombateForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T21:47:19.538Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "CronicaCombateForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\CronicaCombateForm.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Views\\CronicaCombateForm.cs",
               "ToolTip": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\CronicaCombateForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "WinFormsApp1\\Views\\CronicaCombateForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T21:47:09.521Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\LoginForm.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Views\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\LoginForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WinFormsApp1\\Views\\LoginForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T21:29:31.696Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MenuInicio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\MenuInicio.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Views\\MenuInicio.cs",
-              "ToolTip": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\MenuInicio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WinFormsApp1\\Views\\MenuInicio.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T21:29:24.595Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Menu1vsIA.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\Menu1vsIA.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Views\\Menu1vsIA.cs",
-              "ToolTip": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\Menu1vsIA.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WinFormsApp1\\Views\\Menu1vsIA.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T21:19:55.656Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Menu1vs1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\Menu1vs1.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Views\\Menu1vs1.cs",
-              "ToolTip": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\Menu1vs1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WinFormsApp1\\Views\\Menu1vs1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T21:19:53.866Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-05-20T11:43:55.282Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "PersonajeController.cs",
+              "DocumentMoniker": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Controllers\\PersonajeController.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Controllers\\PersonajeController.cs",
+              "ToolTip": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Controllers\\PersonajeController.cs",
+              "RelativeToolTip": "WinFormsApp1\\Controllers\\PersonajeController.cs",
+              "ViewState": "AgIAAIABAAAAAAAAAAAQwKkBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T11:40:36.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "GestionPersonajesForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\GestionPersonajesForm.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Views\\GestionPersonajesForm.cs",
               "ToolTip": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\GestionPersonajesForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "WinFormsApp1\\Views\\GestionPersonajesForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T20:56:08.506Z",
+              "WhenOpened": "2026-05-20T11:38:22.58Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MostrarHistorial.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\MostrarHistorial.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Views\\MostrarHistorial.cs",
-              "ToolTip": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\MostrarHistorial.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WinFormsApp1\\Views\\MostrarHistorial.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T21:46:42.802Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RegistroForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\RegistroForm.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Views\\RegistroForm.cs",
-              "ToolTip": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\RegistroForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WinFormsApp1\\Views\\RegistroForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T21:34:22.485Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GestionPersonajesForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\GestionPersonajesForm.Designer.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Views\\GestionPersonajesForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\GestionPersonajesForm.Designer.cs",
-              "RelativeToolTip": "WinFormsApp1\\Views\\GestionPersonajesForm.Designer.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAkwGoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T20:55:43.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "GestionPersonajesForm.cs",
               "DocumentMoniker": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\GestionPersonajesForm.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Views\\GestionPersonajesForm.cs",
               "ToolTip": "C:\\Users\\Adrian\\source\\repos\\Proyecto\\WinFormsApp1\\WinFormsApp1\\Views\\GestionPersonajesForm.cs",
               "RelativeToolTip": "WinFormsApp1\\Views\\GestionPersonajesForm.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAcwKIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAQwMcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T20:55:14.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-20T11:33:39.347Z"
             }
           ]
         }

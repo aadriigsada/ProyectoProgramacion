@@ -143,9 +143,61 @@ namespace WinFormsApp1.Views
         }
 
         private void btnRefrescar_Click(object sender, EventArgs e)
+{
+    // 1. Verificar si hay un personaje seleccionado en la tabla
+    if (dgvPersonajes.CurrentRow?.DataBoundItem is Personaje personaje)
+    {
+        // 2. REGLA DE NEGOCIO: Si el ID es 9 o menor, es predeterminado
+        if (personaje.Id <= 9)
         {
-            CargarPersonajesEnGrid();
+            MessageBox.Show("No se pueden modificar los personajes predeterminados (ID 9 o menor).", "Acción no permitida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            return;
         }
+
+        // 3. Validar los datos ingresados en los campos de texto
+        string nombre = txtNombre.Text.Trim();
+        if (string.IsNullOrWhiteSpace(nombre))
+        {
+            MessageBox.Show("Escribe un nombre para el personaje.");
+            return;
+        }
+
+        if (!int.TryParse(txtAtaque.Text, out int ataque) || ataque < 0 || ataque > 100 ||
+            !int.TryParse(txtDefensa.Text, out int defensa) || defensa < 0 || defensa > 100 ||
+            !int.TryParse(txtResistencia.Text, out int resistencia) || resistencia < 1 || resistencia > 100)
+        {
+            MessageBox.Show("Ataque y defensa deben estar entre 0 y 100. Resistencia entre 1 y 100.");
+            return;
+        }
+
+        // 4. Crear el objeto con los datos modificados y mantener el mismo ID
+        var personajeModificado = new Personaje
+        {
+            Id = personaje.Id,
+            Nombre = nombre,
+            Ataque = ataque,
+            Defensa = defensa,
+            Resistencia = resistencia,
+            Tecnica = ataque, // Asigna técnica por defecto
+            Descripcion = txtDescripcion.Text.Trim()
+        };
+
+        // 5. Enviar la actualización al controlador
+        if (!_controller.ActualizarPersonaje(personajeModificado, out string error))
+        {
+            MessageBox.Show("Error al modificar: " + error, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return;
+        }
+
+        // 6. Refrescar la tabla para mostrar los cambios y avisar al usuario
+        CargarPersonajesEnGrid();
+        MessageBox.Show("¡Luchador modificado con éxito!", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+    }
+    else
+    {
+        MessageBox.Show("Selecciona un luchador de la lista primero.");
+    }
+}
 
         private void btnEscogerPj_Click(object sender, EventArgs e)
         {

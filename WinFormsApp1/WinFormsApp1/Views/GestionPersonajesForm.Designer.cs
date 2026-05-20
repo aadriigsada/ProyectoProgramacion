@@ -166,6 +166,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "GestionPersonajesForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "GestionPersonajesForm";
             ((System.ComponentModel.ISupportInitialize)crear).EndInit();
             ((System.ComponentModel.ISupportInitialize)eliminar).EndInit();

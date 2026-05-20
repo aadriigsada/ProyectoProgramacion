@@ -65,7 +65,6 @@
             lblSubtitulo.Size = new Size(848, 22);
             lblSubtitulo.TabIndex = 1;
             lblSubtitulo.Text = "Peleadores listos para UEFETE";
-            lblSubtitulo.Click += lblSubtitulo_Click;
             // 
             // lblTitulo
             // 
